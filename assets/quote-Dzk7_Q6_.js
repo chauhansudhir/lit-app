@@ -1,4 +1,4 @@
-import{r as l,x as m,i as f,t as d}from"./index-BfDbAwA6.js";import{g as s}from"./service-base-ihO7f0ps.js";var g=Object.getOwnPropertyDescriptor,p=(e,o,n,c)=>{for(var r=c>1?void 0:c?g(o,n):o,t=e.length-1,i;t>=0;t--)(i=e[t])&&(r=i(r)||r);return r};let a=class extends l{constructor(){super(...arguments),this.data=[]}async connectedCallback(){super.connectedCallback();const e=await s();this.data=e,this.requestUpdate()}render(){return m`
+import{r as l,x as m,i as f,t as d}from"./index-7FdrP48U.js";import{g as s}from"./service-base-ihO7f0ps.js";var g=Object.getOwnPropertyDescriptor,p=(e,o,n,c)=>{for(var r=c>1?void 0:c?g(o,n):o,t=e.length-1,i;t>=0;t--)(i=e[t])&&(r=i(r)||r);return r};let a=class extends l{constructor(){super(...arguments),this.data=[]}async connectedCallback(){super.connectedCallback();const e=await s();this.data=e,this.requestUpdate()}render(){return m`
       <h2>Quote</h2>
       <p>
         ${this.data.map(e=>m`
