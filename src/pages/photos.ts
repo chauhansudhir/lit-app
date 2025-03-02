@@ -20,14 +20,14 @@ export class Photos extends LitElement {
       <div class="photos">
         ${this.data.map(
           (photo) => html`
-            <div class="photo">
-              <img
-                src="${photo.download_url}"
-                alt="${photo.author}"
-                width="100%"
-                height="auto"
-              />
-            </div>
+            <img
+              key="${photo.id}"
+              src="${photo.download_url}"
+              alt="${photo.author}"
+              width="100%"
+              height="auto"
+              class="photo"
+            />
           `
         )}
       </div>
@@ -36,21 +36,21 @@ export class Photos extends LitElement {
 
   static styles = css`
     .photos {
-      columns: 3;
+      columns: 3 300px;
       background-color: var(--background-light);
       border-radius: 1rem;
-      padding: 10px;
+      padding: 1rem;
+      column-gap: 1rem;
     }
 
-    .photo {
+    img {
       break-inside: avoid;
-      margin-bottom: 10px;
-    }
-    .photo img {
+      display: block;
       aspect-ratio: 1/1;
       object-fit: cover;
       width: 100%;
       border-radius: 1rem;
+      margin-bottom: 1rem;
     }
   `;
 }
